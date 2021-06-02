@@ -1,3 +1,9 @@
+.overall{
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +11,7 @@
 }
 
 nav {
-  /* display: inline-block; */
-  /* background-color: black; */
-  /* border: 5px; */
+  border: 1px solid wheat;
   width: 0;
 
 }
@@ -23,14 +27,19 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container{
+  display: grid;
   width: 50%;
   letter-spacing: 0;
   padding: 0px;
   text-align: center;
   background-color: rosybrown;
   transition: visibility, 3000ms;
-  transition: padding 600px;
+  /* transition: padding 600px; */
   transition: letter-spacing 400ms;
   transition: width, 2000ms;
 }
@@ -39,24 +48,22 @@ body {
   width: 100%;
   letter-spacing: 30px;
   color: bisque;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
   
 }
 
 a:hover{
-  transition:letter-spacing 200ms;
+  transition:letter-spacing 500ms;
   letter-spacing: 0;
   color: limegreen;
   
 }
 
 
-
-
 section{
   /* column-count: 2; */
   visibility: hidden;
-  font-size: 45px;
+  font-size: 20px;
   letter-spacing: 0;
 }
 
@@ -79,4 +86,31 @@ section{
 
 .lastlink:hover .more{
   visibility: visible;
+}
+
+.portfolioDiv{
+  /* border: 1px solid black; */
+  width: 100%;
+  text-align: center;
+  box-sizing: content-box;
+  background-image: linear-gradient(to left, rosybrown,wheat);
+  padding-bottom: 60px;
+  transition: padding-bottom 600ms;
+  transition: letter-spacing 400ms;
+  transition: width, 2000ms;
+  /* transition: width 600ms 600ms; */
+}
+
+.portfolioDiv:hover{
+  background-color: wheat;
+  width: 100%;
+  letter-spacing: 30px;
+  color: aliceblue;
+  padding-bottom: 400px;
+  
+}
+
+table, td{
+  width: 100%;
+  border: 1px solid wheat;
 }
