@@ -118,7 +118,7 @@ section{
 }
 
 .portfolioDiv:hover {
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0.37);
   width: 100%;
   letter-spacing: 30px;
   color: aliceblue;
