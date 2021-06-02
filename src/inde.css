@@ -1,12 +1,17 @@
 .overall{
 }
 .name{
+  transition: letter-spacing 3000ms;
   font-size: 60px;
-  padding-top: 300px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  letter-spacing: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.name:hover{
 
+}
 .video{
   object-fit: cover;
   position: fixed;
@@ -35,15 +40,18 @@ nav {
 a{
   color: bisque;
   list-style-image: none;
-  transition: 4000ms
+  transition: 5000ms
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family:fantasy; */
 }
 
 ul {
+  letter-spacing: 25px;
   list-style-type: none;
   
   /* transform: translate(320px); */
@@ -58,21 +66,18 @@ ul {
   letter-spacing: 0;
   padding: 0px;
   background-color: rgba(188, 143, 143, 0.172);
-  transition: visibility, 3000ms;
+  transition: visibility 3000ms;
   transition: letter-spacing 400ms;
   transition: width, 2000ms;
 }
 
-.container:hover{
+/* .container:hover{
   width: 100%;
   letter-spacing: 25px;
   color: bisque;
-  /* padding-bottom: 271px;
-   */
-   padding-bottom: 14%;
+  padding-bottom:25%;
 
-  
-}
+} */
 
 a:hover{
   transition:letter-spacing 500ms;
@@ -84,6 +89,7 @@ a:hover{
 
 section{
   /* column-count: 2; */
+  color: bisque;
   visibility: hidden;
   font-size: 20px;
   letter-spacing: 0;
@@ -93,6 +99,7 @@ section{
   visibility: visible;
   text-align: right;
 }
+
 
 section{
   padding: 100px;
@@ -111,10 +118,9 @@ section{
   position: relative;
   width: 50%;
   float: right;
-
   text-align: center;
-  box-sizing: content-box;
-  background-image: linear-gradient(to left, rgba(188, 143, 143, 0),rgba(245, 222, 179, 0.145));
+  /* box-sizing: content-box; */
+  background-image: linear-gradient(to left, rgba(188, 143, 143, 0.248),rgba(245, 222, 179, 0.145));
   padding-bottom: 150px;
   /* padding-right: 20px; */
 
@@ -126,7 +132,7 @@ section{
 
 .portfolioDiv:hover {
   background-image: linear-gradient(to bottom rgba(245, 222, 179, 0.5) black) ;
-  width: 90%;
+  width: 100%;
   letter-spacing: 30px;
   color: aliceblue;
   padding-bottom: 25%;
@@ -144,9 +150,7 @@ th {
 }
 
 .overallInterests{
-  float: left;
   position: relative;
-  position: absolute;
   color: black;
   padding-bottom: 150px;
   letter-spacing: 0;
@@ -154,20 +158,18 @@ th {
   display: flex;
   justify-content: space-evenly;
   background-image: linear-gradient( to left, rgba(98, 107, 58, 0.281), rgba(153, 45, 45, 0.104));
-  transition: 3000ms;
+  transition: 3000ms 500ms;
   /* transition: background-image 1000ms 600ms; */
 }
 
 .overallInterests:hover{
-  /* transform: translate(0); */
   color: aliceblue;
   justify-content: center;
   letter-spacing: 20px;
-  width: 90%;
-  padding-bottom: 550px;
-  transform: translate(100px,-400px);
-  /* background-image: linear-gradient(to left, rgb(140, 47, 13),rgba(188, 143, 143, 0.487)); */
-  background-color: rgb(140, 47, 13);
+  width: 100%;
+  padding-bottom: 300px;
+  /* transform: translate(80px,100px); */
+  background-image: linear-gradient(to left, rgba(238, 82, 26, 0.111),rgba(188, 143, 143, 0.159));
 }
 
 /* .firstRow{

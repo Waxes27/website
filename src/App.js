@@ -28,9 +28,9 @@ class App extends Component {
           <div>
             <Interest />
           </div>
-          <div className="footer">
-            <Footer /> 
-          </div>
+          {/* <div className="footer"> */}
+            {/* <Footer />  */}
+          {/* </div> */}
         </div>
       </div>
     );
