@@ -13,7 +13,7 @@
 nav {
   border: 1px solid wheat;
   width: 0;
-
+  
 }
 
 a{
@@ -21,7 +21,6 @@ a{
   list-style-image: none;
   transition: 5000ms
 }
-
 
 body {
   font-family: 'Courier New', Courier, monospace;
@@ -94,7 +93,8 @@ section{
   text-align: center;
   box-sizing: content-box;
   background-image: linear-gradient(to left, rosybrown,wheat);
-  padding-bottom: 60px;
+  padding-bottom: 200px;
+  padding-right: 20px;
   transition: padding-bottom 600ms;
   transition: letter-spacing 400ms;
   transition: width, 2000ms;
@@ -110,7 +110,48 @@ section{
   
 }
 
-table, td{
-  width: 100%;
+table, td, tr{
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+}
+
+th {
   border: 1px solid wheat;
+  height: 10%;
+}
+
+tr:hover {
+  background-color: khaki;
+}
+
+.overallInterests{
+  padding-left: 60px;
+  padding-bottom: 0px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to left, rgba(165, 42, 42, 0.479), linen);
+  transition: 1000ms;
+}
+
+.overallInterests:hover{
+  justify-content: center;
+  width: 100%;
+  background-image: linear-gradient();
+  padding-bottom: 90px;
+  /* transform: translate(80px,100px); */
+}
+
+td{
+  visibility: hidden;
+}
+
+.firstRow{
+  visibility: visible;
+}
+
+/* flames start here */
+.overallInterests:hover + .firstRow{
+  color: blueviolet;
 }
