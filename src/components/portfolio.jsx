@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
 
-const Portfolio = () => {
-    return (
-        <div className="portfolioDiv">
-            <h1>My portfolio</h1>
-            <div>
-            
+export default class interests extends Component {
+    render() {
+        return (
+            <div className="portfolioDiv">
+                <h1>My Portfolio</h1>
             </div>
-        </div>
-    )
-
+        )
+    }
 }
-
-export default Portfolio

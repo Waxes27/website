@@ -108,28 +108,31 @@ section{
 
 
 .portfolioDiv{
-  position: relative;
-  width: 50%;
   float: right;
-
-  text-align: center;
-  box-sizing: content-box;
-  background-image: linear-gradient(to left, rgba(188, 143, 143, 0),rgba(245, 222, 179, 0.145));
+  position: relative;
+  /* position: absolute; */
+  /* color: black; */
   padding-bottom: 150px;
-  /* padding-right: 20px; */
-
-  transition: padding-bottom 6000ms, width 3000ms , letter-spacing 12000ms ;
-  /* transition: ; */
-
-  /* transition: width 600ms 600ms; */
+  letter-spacing: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-image: linear-gradient( to left, rgba(98, 107, 58, 0.281), rgba(153, 45, 45, 0.104));' */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(245, 222, 179, 0.145));
+  transition: 3000ms;
 }
 
 .portfolioDiv:hover {
-  background-image: linear-gradient(to bottom rgba(245, 222, 179, 0.5) black) ;
+  /* position: absolute; */
+  /* background-image: linear-gradient(to bottom rgba(245, 222, 179, 0.5) black); */
+  background-color: rgb(186, 153, 70);
+  /* background-color: aqua; */
+  padding-bottom: 550px;
   width: 90%;
   letter-spacing: 30px;
   color: aliceblue;
-  padding-bottom: 25%;
+  /* padding-bottom: 25%; */
+  transform: translate(-90px, -400px);
 }
 
 table, td, tr{
@@ -147,13 +150,14 @@ th {
   float: left;
   position: relative;
   position: absolute;
-  color: black;
+  /* color: black; */
   padding-bottom: 150px;
   letter-spacing: 0;
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient( to left, rgba(98, 107, 58, 0.281), rgba(153, 45, 45, 0.104));
+  /* background-image: linear-gradient( to left, rgba(98, 107, 58, 0.281), rgba(153, 45, 45, 0.104));' */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgba(245, 222, 179, 0.145));
   transition: 3000ms;
   /* transition: background-image 1000ms 600ms; */
 }
