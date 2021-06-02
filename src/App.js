@@ -20,13 +20,13 @@ class App extends Component {
             <section>Feel free to visit the links above</section>
           </div>
 
-          <div id="Portfolio">
-            <Portfolio />
+          <div>
+            <Interest />
           </div>
         </div>
         <div>
-          <div>
-            <Interest />
+          <div id="Portfolio">
+            <Portfolio />
           </div>
           {/* <div className="footer"> */}
             {/* <Footer />  */}
