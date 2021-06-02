@@ -1,7 +1,17 @@
 .overall{
-  display: flex;
-  justify-content: space-evenly;
-  flex-grow: inherit;
+}
+.name{
+  padding-bottom: 30px;
+}
+.video{
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#Wrapper{
+  background-color:grey;
 }
 
 * {
@@ -11,8 +21,10 @@
 }
 
 nav {
-  border: 1px solid wheat;
-  width: 0;
+  /* border: 1px solid wheat; */
+  /* width: 0; */
+  /* justify-content: center; */
+  text-align: center;
   
 }
 
@@ -28,34 +40,40 @@ body {
 
 ul {
   list-style-type: none;
+  
+  /* transform: translate(320px); */
 }
 
 .container{
+  position: relative;
+  text-align: center;
+  justify-content: center;
   display: grid;
   width: 50%;
   letter-spacing: 0;
   padding: 0px;
-  text-align: center;
-  background-color: rosybrown;
+  background-color: rgba(188, 143, 143, 0.172);
   transition: visibility, 3000ms;
-  /* transition: padding 600px; */
   transition: letter-spacing 400ms;
   transition: width, 2000ms;
 }
 
 .container:hover{
   width: 100%;
-  letter-spacing: 30px;
+  letter-spacing: 25px;
   color: bisque;
-  padding-bottom: 200px;
+  /* padding-bottom: 271px;
+   */
+   padding-bottom: 23%;
+
   
 }
 
 a:hover{
   transition:letter-spacing 500ms;
   letter-spacing: 0;
-  color: limegreen;
-  
+  color: azure;
+  /* background-clip: ; */
 }
 
 
@@ -72,7 +90,7 @@ section{
 }
 
 section{
-  padding-top: 100px;
+  padding: 100px;
 }
 
 
@@ -83,31 +101,28 @@ section{
 }
 
 
-.lastlink:hover .more{
-  visibility: visible;
-}
 
 .portfolioDiv{
-  /* border: 1px solid black; */
-  width: 100%;
+  position: relative;
+  width: 50%;
+  float: right;
   text-align: center;
-  box-sizing: content-box;
-  background-image: linear-gradient(to left, rosybrown,wheat);
+  /* box-sizing: content-box; */
+  background-image: linear-gradient(to left, rosybrown,wheat, 0.5);
   padding-bottom: 200px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   transition: padding-bottom 600ms;
   transition: letter-spacing 400ms;
-  transition: width, 2000ms;
+  transition: width, 2000ms 200ms;
   /* transition: width 600ms 600ms; */
 }
 
-.portfolioDiv:hover{
+.portfolioDiv:hover {
   background-color: wheat;
   width: 100%;
   letter-spacing: 30px;
   color: aliceblue;
-  padding-bottom: 400px;
-  
+  padding-bottom: 619px;
 }
 
 table, td, tr{
@@ -121,37 +136,56 @@ th {
   height: 10%;
 }
 
-tr:hover {
-  background-color: khaki;
-}
-
 .overallInterests{
-  padding-left: 60px;
-  padding-bottom: 0px;
+  position: relative;
+  color: black;
+  padding-bottom: 150px;
+  letter-spacing: 0;
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient(to left, rgba(165, 42, 42, 0.479), linen);
-  transition: 1000ms;
+  background-image: linear-gradient( to right, rgba(255, 228, 196, 0.412), rgba(153, 45, 45, 0.104));
+  transition: 1000ms 700ms;
+  /* transition: background-image 1000ms 600ms; */
 }
 
 .overallInterests:hover{
+  color: aliceblue;
   justify-content: center;
+  letter-spacing: 20px;
   width: 100%;
-  background-image: linear-gradient();
-  padding-bottom: 90px;
+  padding-bottom: 300px;
   /* transform: translate(80px,100px); */
+  background-image: linear-gradient(to right, rgba(238, 82, 26, 0.111),rgba(188, 143, 143, 0.159));
 }
+
+/* .firstRow{
+  color: blueviolet;
+  /* text-decoration: dashed; */
+/* } */ 
 
 td{
   visibility: hidden;
 }
 
 .firstRow{
-  visibility: visible;
+  visibility:visible;
 }
 
 /* flames start here */
-.overallInterests:hover + .firstRow{
-  color: blueviolet;
+.overallInterests:hover td{
+  visibility:block;
+  color: rgb(0, 0, 0);
+}
+
+.footer{
+  color: aliceblue;
+}
+
+section{
+  transition: letter-spacing 5000ms;
+}
+section:hover{
+  letter-spacing: 15px;
+  
 }
